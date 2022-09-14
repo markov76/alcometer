@@ -18,6 +18,9 @@ function App() {
      else {
       promille = (((bottles * 0.33) *8 * 4.5) - ((weight/10) * time )) / (weight * 0.6)
      }
+     if (promille < 0) {
+      promille = 0;
+     }     
      setResult(promille)
   }
 
